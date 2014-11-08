@@ -21,8 +21,12 @@ describe "dimus-base::default" do
   it "includes git" do
     expect(chef_run).to include_recipe "git"
   end
-  
+
   it "includes vim" do
     expect(chef_run).to include_recipe "vim"
+  end
+
+  it "includes users" do
+    expect(chef_run).to include_recipe "users"
   end
 end
