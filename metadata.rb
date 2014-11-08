@@ -4,9 +4,9 @@ maintainer_email 'dmozzherin@gmail.com'
 license          'MIT'
 description      'Installs/Configures dimus-base'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.2'
+version          '0.1.3'
 
-%w(apt yum chef-client git vim users).each do |cb|
+%w(apt yum chef-client git vim users sudo).each do |cb|
   depends cb
 end
 
