@@ -5,3 +5,11 @@ license          'MIT'
 description      'Installs/Configures dimus-base'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
+
+%w(apt yum chef-client git vim).each do |cb|
+  depends cb
+end
+
+%w(debian ubuntu centos).each do |os|
+  supports os
+end
