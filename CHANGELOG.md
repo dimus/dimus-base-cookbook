@@ -2,6 +2,9 @@ dimus-base CHANGELOG
 ====================
 
 This file is used to list changes made in each version of the dimus-base cookbook.
+0.1.8
+-----
+- dimus - Sudo works passwordless
 
 0.1.4
 -----
