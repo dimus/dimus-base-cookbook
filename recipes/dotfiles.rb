@@ -58,7 +58,6 @@ end
 def link_file(home_path, file_path, u)
   file home_path do
     action :delete
-    recursive :true
   end
   link file_path do
     owner u.id
@@ -70,6 +69,7 @@ end
 def link_dir(home_path, file_path, u)
   directory home_path do
     action :delete
+    recursive true
   end
   execute "ln -s #{file_path} #{home_path}" do
     user u.id
