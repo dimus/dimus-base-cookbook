@@ -42,21 +42,27 @@ def process_links(path, user)
     file_path = File.join(path, file)
     home_path = File.join(user.home, file)
     if dotfile?(file) && !link?(home_path, file_path)
-      link_file(home_path, file_path, user)
+      make_link(home_path, file_path, user)
     end
   end
 end
 
-def link_file(home_path, file_path, u)
+def make_link(home_path, file_path, u)
   if File.file?(home_path)
-    file home_path { action :delete }
-    link file_path do
-      owner u.id
-      group u.id
-      to home_path
-    end
+    link_file(home_path, file_path, u)
   else
     link_dir(home_path, file_path, u)
+  end
+end
+
+def link_file(home_path, file_path, u)
+  file home_path do
+    action :delete
+  end
+  link file_path do
+    owner u.id
+    group u.id
+    to home_path
   end
 end
 

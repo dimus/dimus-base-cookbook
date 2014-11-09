@@ -12,7 +12,7 @@ GRAPH
     windows (~> 1.11)
   chef_handler (1.1.6)
   cron (1.6.1)
-  dimus-base (0.1.9)
+  dimus-base (0.1.10)
     apt (>= 0.0.0)
     chef-client (>= 0.0.0)
     git (>= 0.0.0)
