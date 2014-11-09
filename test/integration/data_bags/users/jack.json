@@ -1,0 +1,13 @@
+{
+  "groups": ["dotfiles"],
+  "htpasswd": "$apr1$iZX.",
+  "shell": "/bin/bash",
+  "ssh_keys": ["ssh-rsa AAAAB3NzaCAAAABIwwQ== jack@example.org.local"
+],
+  "id": "jack",
+  "nagios": {
+    "pager": "jack@example.org",
+    "email": "jack@example.org"
+  }
+}
+

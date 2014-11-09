@@ -7,4 +7,4 @@ include_recipe "vim"
 include_recipe "users"
 include_recipe "users::sysadmins"
 include_recipe "sudo"
-
+include_recipe "dimus-base::dotfiles"
