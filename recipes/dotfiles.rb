@@ -58,6 +58,7 @@ end
 def link_file(home_path, file_path, u)
   file home_path do
     action :delete
+    recursive :true
   end
   link file_path do
     owner u.id
