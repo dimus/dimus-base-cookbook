@@ -15,8 +15,12 @@ describe "dimus-base::default" do
     expect(chef_run).to include_recipe "apt"
   end
 
-  it "includes chef-client" do
-    expect(chef_run).to include_recipe "chef-client"
+  it "includes chef-client::config" do
+    expect(chef_run).to include_recipe "chef-client::config"
+  end
+
+  it "includes chef-client::service" do
+    expect(chef_run).to include_recipe "chef-client::service"
   end
 
   it "includes git" do
