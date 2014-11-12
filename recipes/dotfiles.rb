@@ -20,6 +20,7 @@ def sync_dotfile_git(user)
     repository node["dimus-base"]["dotfile-git"]
     user user.id
     group user.id
+    enable_submodules true
     action :sync
   end
 end

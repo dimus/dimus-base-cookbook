@@ -3,6 +3,10 @@ dimus-base CHANGELOG
 
 This file is used to list changes made in each version of the dimus-base cookbook.
 
+0.2.0
+-----
+cleaning up making it work for centos kitchen
+
 0.1.10
 ------
 bug fix for dotfiles
