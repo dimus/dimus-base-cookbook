@@ -4,7 +4,7 @@ This cookbook creates basic environment for server or workstation with my usual
 bells and whistles
 
 [![Cookbook version]][1][2]
-[![Continuous Integration Status][2]][3]
+[![Continuous Integration Status][3]][4]
 
 
 Requirements
