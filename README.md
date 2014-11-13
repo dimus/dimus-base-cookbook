@@ -3,6 +3,10 @@ dimus-base Cookbook
 This cookbook creates basic environment for server or workstation with my usual
 bells and whistles
 
+[![Cookbook version]][1][2]
+[![Continuous Integration Status][2]][3]
+
+
 Requirements
 ------------
 It will eventually support ubuntu, centos and darwin
@@ -72,3 +76,8 @@ e.g.
 License and Authors
 -------------------
 Authors: Dmitry Mozzherin
+
+[1]: http://img.shields.io/cookbook/v/dimus/dimus-base-cookbook.svg
+[2]: https://github.com/dimus/dimus-base-cookbook
+[3]: http://img.shields.io/travis/dimus/dimus-base-cookbook.svg
+[4]: http://travis-ci.org/dimus/dimus-base-cookbook
