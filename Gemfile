@@ -1,9 +1,11 @@
 source "https://rubygems.org"
 
-group :lint do
+group :test do
   gem "foodcritic", "~> 3.0"
   gem "rubocop", "~> 0.23"
   gem "rainbow", "< 2.0"
+  gem "rake", "~> 10.3"
+  gem "minitest-chef-handler"
 end
 
 group :unit do
@@ -11,11 +13,9 @@ group :unit do
   gem "chefspec", "~> 4.0.1"
 end
 
-group :test do
+group :integration do
   gem "test-kitchen", "~> 1.2"
   gem "kitchen-vagrant", "~> 0.11"
-  gem "rake", "~> 10.3"
-  gem "minitest-chef-handler"
 end
 
 group :development do
