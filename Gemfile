@@ -14,10 +14,10 @@ end
 group :integration do
   gem "test-kitchen", "~> 1.2"
   gem "kitchen-vagrant", "~> 0.11"
+  gem "byebug", "~> 3.4"
 end
 
 group :development do
-  gem "byebug", "~> 3.4"
   gem "rake", "~> 10.3"
   gem "minitest-chef-handler"
 end
