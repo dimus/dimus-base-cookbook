@@ -21,6 +21,7 @@ depends "sudo", "~>2.7"
 depends "users", "~>1.7"
 depends "vim", "~>1.1"
 depends "windows", "~>1.34"
+depends "serf", "~> 0.7"
 
 %w(debian ubuntu centos).each do |os|
   supports os

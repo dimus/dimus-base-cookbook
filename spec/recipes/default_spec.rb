@@ -39,6 +39,10 @@ describe "dimus-base::default" do
     expect(chef_run).to include_recipe "sudo"
   end
 
+  it "includes serf" do
+    expect(chef_run).to include_recipe "serf"
+  end
+
   it "includes dimus-base::dotfiles" do
     expect(chef_run).to include_recipe "dimus-base::dotfiles"
   end
