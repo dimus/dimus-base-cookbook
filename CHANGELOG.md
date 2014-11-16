@@ -2,6 +2,9 @@ dimus-base CHANGELOG
 ====================
 
 This file is used to list changes made in each version of the dimus-base cookbook.
+0.2.1
+-----
+Added local dns to dhcp for ubuntu
 
 0.2.0
 -----

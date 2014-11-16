@@ -4,7 +4,7 @@ maintainer_email "dmozzherin@gmail.com"
 license          "MIT"
 description      "Installs/Configures dimus-base"
 long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
-version          "0.2.0"
+version          "0.2.1"
 
 depends "chef-client", "~>3.9"
 depends "chef_handler", "~>1.1"
