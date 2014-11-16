@@ -14,6 +14,6 @@ if File.exist?(config_file) && dimus_base_config["dns_ip"]
                                  "\\1 #{dimus_base_config["dns_ip"]};")
     end
 
-    execute  "sudo ifdown --exclude=lo -a && sudo ifup --exclude=lo -a"
+    #execute  "sudo ifdown --exclude=lo -a && sudo ifup --exclude=lo -a"
   end
 end
