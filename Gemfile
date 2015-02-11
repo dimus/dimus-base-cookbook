@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 group :test do
   gem "foodcritic", "~> 3.0"
-  gem "rubocop", "~> 0.23"
+  gem "rubocop", "~> 0.29"
   gem "rainbow", "< 2.0"
   gem "rake", "~> 10.3"
   gem "minitest-chef-handler"

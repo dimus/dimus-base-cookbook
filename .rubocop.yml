@@ -1,8 +1,10 @@
 AllCops:
   Exclude:
     - metadata.rb
-    - bundle_bin/**
-    - berks-cookbooks/**
+    - bundle_bin/**/*
+    - berks-cookbooks/**/*
+    - .kitchen/**/*
+    - .bundle/**/*
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 Style/DotPosition:
