@@ -2,9 +2,9 @@ DEPENDENCIES
   dimus-base
     path: .
     metadata: true
-  eol-users-wrapper
-    git: git://github.com/EOL/eol-users-wrapper-cookbook.git
-    revision: c43063f8d6966c352f0a6268428cd5418fc8984b
+  eol-users
+    git: git://github.com/EOL/eol-users-cookbook.git
+    revision: cfec36e9fc95a124af05eaad7ebe549cb1ef7bde
 
 GRAPH
   apt (2.6.1)
@@ -22,7 +22,7 @@ GRAPH
     chef_handler (~> 1.1)
     cron (~> 1.6)
     dmg (~> 2.2)
-    eol-users-wrapper (>= 0.0.0)
+    eol-users (~> 0.1)
     git (~> 4.0)
     logrotate (~> 1.7)
     runit (~> 1.5)
@@ -32,8 +32,7 @@ GRAPH
     yum (~> 3.4)
     yum-epel (~> 0.5)
   dmg (2.2.2)
-  eol-users-wrapper (0.1.3)
-    users (~> 1.7)
+  eol-users (0.1.4)
   git (4.1.0)
     build-essential (>= 0.0.0)
     dmg (>= 0.0.0)
@@ -47,7 +46,6 @@ GRAPH
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   sudo (2.7.1)
-  users (1.7.0)
   vim (1.1.2)
   windows (1.36.1)
     chef_handler (>= 0.0.0)

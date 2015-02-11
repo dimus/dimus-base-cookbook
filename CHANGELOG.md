@@ -2,6 +2,9 @@ dimus-base CHANGELOG
 ====================
 
 This file is used to list changes made in each version of the dimus-base cookbook.
+0.2.4
+-----
+Changed users to eol-users
 
 0.2.3
 -----

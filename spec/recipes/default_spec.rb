@@ -6,6 +6,7 @@ describe "dimus-base::default" do
     stub_command("which sudo").and_return(0)
     stub_search("users", "groups:dotfiles").and_return([])
     stub_data_bag_item("dimus-base", "config").and_return({})
+    stub_data_bag_item("eol-users", "groups").and_return({"groups" => []})
   end
 
   it "does include yum" do
@@ -32,8 +33,8 @@ describe "dimus-base::default" do
     expect(chef_run).to include_recipe "vim"
   end
 
-  it "includes users" do
-    expect(chef_run).to include_recipe "users"
+  it "includes eol-users" do
+    expect(chef_run).to include_recipe "eol-users"
   end
 
   it "includes sudo" do

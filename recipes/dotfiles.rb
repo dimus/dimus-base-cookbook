@@ -89,7 +89,7 @@ end
 def dotfiles
   home_prefix = node["platform"] =~ /darwin/ ? "/Users/" : "/home/"
 
-  search("users", "groups:dotfiles").each do |user|
+  search("eol-users", "groups:dotfiles AND NOT id:groups").each do |user|
     u = OpenStruct.new(
       id: user["id"],
       home: home_prefix + user["id"]
