@@ -11,7 +11,7 @@ if File.exist?(config_file) && dimus_base_config["dns_ip"]
 
     file config_file do
       content config_content.gsub(/#(prepend domain-name-servers).*?;/m,
-                                 "\\1 #{dimus_base_config["dns_ip"]};\n"\ 
+                                 "\1 #{dimus_base_config["dns_ip"]};\n"\
                                  "prepend domain-name \"mozzherin.org \"")
     end
 

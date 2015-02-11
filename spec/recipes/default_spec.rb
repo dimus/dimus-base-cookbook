@@ -5,6 +5,7 @@ describe "dimus-base::default" do
     # allow(File).to receive(:exists?)
     stub_command("which sudo").and_return(0)
     stub_search("users", "groups:dotfiles").and_return([])
+    stub_data_bag_item("dimus-base", "config").and_return({})
   end
 
   it "does include yum" do
@@ -37,10 +38,6 @@ describe "dimus-base::default" do
 
   it "includes sudo" do
     expect(chef_run).to include_recipe "sudo"
-  end
-
-  it "includes serf" do
-    expect(chef_run).to include_recipe "serf"
   end
 
   it "includes dimus-base::dotfiles" do

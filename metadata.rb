@@ -18,10 +18,9 @@ depends "git", "~>4.0"
 depends "logrotate", "~>1.7"
 depends "runit", "~>1.5"
 depends "sudo", "~>2.7"
-depends "users", "~>1.7"
 depends "vim", "~>1.1"
 depends "windows", "~>1.34"
-depends "serf", "~> 0.7"
+depends "eol-users-wrapper"
 
 %w(debian ubuntu centos).each do |os|
   supports os
