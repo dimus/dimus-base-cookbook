@@ -20,7 +20,7 @@ depends "runit", "~>1.5"
 depends "sudo", "~>2.7"
 depends "vim", "~>1.1"
 depends "windows", "~>1.34"
-depends "eol-users", "~> 0.1"
+depends "eol-users", "~>0.1"
 
 %w(debian ubuntu centos).each do |os|
   supports os
