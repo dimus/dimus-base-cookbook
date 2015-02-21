@@ -21,7 +21,8 @@ depends "sudo", "~>2.7"
 depends "vim", "~>1.1"
 depends "windows", "~>1.34"
 depends "eol-users", "~>0.1"
+depends "eol-sensu-wrapper", "~>0.1.2"
 
-%w(debian ubuntu centos).each do |os|
+%w(debian ubuntu centos redhat).each do |os|
   supports os
 end
