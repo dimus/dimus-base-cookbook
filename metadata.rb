@@ -6,7 +6,7 @@ description      "Installs/Configures dimus-base"
 long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
 version          "0.2.4"
 
-depends "chef-client", "~>3.9"
+depends "chef-client", "~>4.2"
 depends "chef_handler", "~>1.1"
 depends "apt", "~>2.6"
 depends "yum-epel", "~>0.5"
